@@ -13,7 +13,6 @@ double hitungRataRata(double nilai[], int jumlahMapel) {
     return total / jumlahMapel;
 }
 
-// Fungsi menentukan rangking berdasarkan rata-rata
 void hitungRangking(double rata[], int rangking[], int jumlahSiswa) {
     for (int i = 0; i < jumlahSiswa; i++) {
         rangking[i] = 1;
@@ -36,16 +35,16 @@ int main() {
     double rata[MAX_SISWA];
     int rangking[MAX_SISWA];
 
-    // 1. Display awal
+   
     cout << "===============================" << endl;
     cout << "      Program Raport Siswa     " << endl;
     cout << "===============================" << endl;
 
-    // 2. Input nama kelas
+   
     cout << "Masukkan nama kelas: ";
     getline(cin, namaKelas);
 
-    // 3. Input jumlah siswa
+    
     cout << "Masukkan jumlah siswa: ";
     cin >> jumlahSiswa;
     cin.ignore();
@@ -67,7 +66,7 @@ int main() {
         }
     }
 
-    // 6 & 7. Looping siswa, input nama dan nilai tiap mapel
+    
     for (int i = 0; i < jumlahSiswa; i++) {
         cout << "\n--- Siswa ke-" << i + 1 << " ---" << endl;
         cout << "Nama siswa: ";
