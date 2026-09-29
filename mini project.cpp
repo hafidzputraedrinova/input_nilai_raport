@@ -50,7 +50,7 @@ int main() {
     cin >> jumlahSiswa;
     cin.ignore();
 
-    // 4 & 5. Input mapel dengan while dan boolean
+   
     bool tambahMapel = true;
     while (tambahMapel) {
         cout << "Masukkan nama mapel ke-" << jumlahMapel + 1 << ": ";
@@ -77,7 +77,7 @@ int main() {
             cout << "Nilai " << mapel[j] << ": ";
             cin >> nilai[i][j];
 
-            // 8. Validasi nilai 0 - 100
+           
             while (nilai[i][j] < 0 || nilai[i][j] > 100) {
                 cout << "Nilai tidak valid! Harus 0 - 100." << endl;
                 cout << "Nilai " << mapel[j] << ": ";
@@ -86,14 +86,14 @@ int main() {
         }
         cin.ignore();
 
-        // 9. Hitung rata-rata
+        
         rata[i] = hitungRataRata(nilai[i], jumlahMapel);
     }
 
-    // 10. Tentukan rangking
+    
     hitungRangking(rata, rangking, jumlahSiswa);
 
-    // 11. Tampilkan hasil
+    
     cout << "\n===============================" << endl;
     cout << "Kelas: " << namaKelas << endl;
     cout << "===============================" << endl;
